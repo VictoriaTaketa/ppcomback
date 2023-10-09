@@ -26,7 +26,7 @@ function Sidebar() {
 
             <BotaoConfig>
                 <img src={configicon} />
-                Configurações
+                <p>Configurações</p>
             </BotaoConfig>
 
             <BotaoSobre>

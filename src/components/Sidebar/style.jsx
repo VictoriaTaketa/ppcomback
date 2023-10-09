@@ -43,6 +43,10 @@ export const BotaoConfig = styled.button`
     align-items: center;
     padding-top: 2vh;
     padding-left: 1vw;
+
+    p{
+        padding-left: 5vw;
+    }
 `
 
 export const BotaoSobre = styled.button`
