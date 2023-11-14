@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Cadastro from "../paginas/Cadastro/Cadastro";
-import Index from "../paginas/Index/Index";
-import Login from "../paginas/Login/Login";
-import RecSenha from "../paginas/RecSenha/RecSenha"
-import Erro from "../paginas/Erro/Erro"
-import Home from "../paginas/Home/Home"
+import Cadastro from "./frontend/paginas/Cadastro/Cadastro";
+import Index from "./frontend/paginas/Index/Index";
+import Login from "./frontend/paginas/Login/Login";
+import RecSenha from "./frontend/paginas/RecSenha/RecSenha"
+import Erro from "./frontend/paginas/Erro/Erro"
+import Home from "./frontend/paginas/Home/Home"
 
 function Rotas(){
     return(

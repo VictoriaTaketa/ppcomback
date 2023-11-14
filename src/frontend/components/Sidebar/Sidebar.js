@@ -24,11 +24,6 @@ function Sidebar() {
                 <p>Perfil</p>
             </BotaoPerfil>
 
-            <BotaoConfig>
-                <img src={configicon} />
-                <p>Configurações</p>
-            </BotaoConfig>
-
             <BotaoSobre>
                 <img src={sobreicon} />
                 <p>Sobre</p>

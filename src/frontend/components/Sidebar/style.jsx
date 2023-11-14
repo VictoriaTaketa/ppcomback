@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const SidebarStyle = styled.div`
     width: 20vw;
-    height: 100%;
+    height: 110%;
     background-color: rgba(141, 226, 139, 0.66);
 `
 
@@ -22,30 +22,18 @@ export const HashtagStyle = styled.p`
 
 export const BotaoPerfil = styled.button`
     color: #343434;
-    width: 20vw;
     display: flex;
     align-items: center;
     padding-top: 2vh;
     padding-left: 1vw;
-
+    margin-left: 2vw;
     p{
-        padding-left: 0.5vw;
+        padding-left: 1.5vw;
+        font-weight: bold;
     }
 
     img{
-        width: 5vw;
-    }
-`
-
-export const BotaoConfig = styled.button`
-    color: #343434;
-    display: flex;
-    align-items: center;
-    padding-top: 2vh;
-    padding-left: 1vw;
-
-    p{
-        padding-left: 5vw;
+        width: 4vw;
     }
 `
 
@@ -55,13 +43,15 @@ export const BotaoSobre = styled.button`
     align-items: center;
     padding-top: 2vh;
     padding-left: 1vw;
+    margin-left: 2vw;
 
     p{
         padding-left: 1.5vw;
+        font-weight: bold;
     }
 
     img{
-        width: 5vw;
+        width: 4vw;
     }
 `
 
@@ -70,10 +60,10 @@ export const BotaoSair = styled.button`
     width: 20vw;
     display: flex;
     align-items: center;
-    padding-top: 17.2vh;
+    margin-top: 82%;
     padding-left: 4vw;
-
     p{
         padding-left: 1vw;
+        font-weight: bold;
     }
 `

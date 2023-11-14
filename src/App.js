@@ -1,6 +1,5 @@
 import { ChakraProvider } from '@chakra-ui/react'
-import Login from './paginas/Login/Login'
-import Rotas from './Rotas/Rotas';
+import Rotas from './Rotas';
 
 function App() {
   return (
