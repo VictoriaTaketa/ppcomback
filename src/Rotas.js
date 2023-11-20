@@ -7,7 +7,7 @@ import Erro from "./frontend/paginas/Erro/Erro"
 import Home from "./frontend/paginas/Home/Home"
 import Selecao from "./frontend/components/Selecao/Selecao.js"
 import Sobre from "./frontend/paginas/Sobre/Sobre"
-import Perfil from "./frontend/paginas/usuariotela/usuarioTela";
+import Perfil from "./frontend/paginas/UsuarioTela/usuarioTela";
 
 function Rotas(){
     return(

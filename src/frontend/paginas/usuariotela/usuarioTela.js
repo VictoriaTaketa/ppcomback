@@ -1,7 +1,8 @@
 import Header from "../../components/Header/Header"
 import fundoperfil from "../../assets/fundo_perfil.png"
 import fotoperfil from "../../assets/foto_perfil.png"
-import { EsteticaStyled, FotoPerfil, Fundo, ImagemFundo } from "./styled"
+import { BarrinhaUsuario, EsteticaBanner, FotoPerfil, Fundo, ImagemFundo } from "./styled"
+import Biografia from "../../components/Biografia/Biografia"
 
 
 function usuarioTela() {
@@ -9,10 +10,12 @@ function usuarioTela() {
         <>
             <Header />
             <Fundo>
-            <EsteticaStyled>
                 <ImagemFundo src={fundoperfil} />
+            <EsteticaBanner>
                 <FotoPerfil src={fotoperfil}/>
-            </EsteticaStyled>
+            </EsteticaBanner>
+                <BarrinhaUsuario/>
+                <Biografia/>
             </Fundo>
             
         </>

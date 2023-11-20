@@ -2,6 +2,7 @@
 
 // Importar o arquivo app
 const app = require('./app');
+
 // Importar a porta do servidor
 const port = app.get('port');
 
