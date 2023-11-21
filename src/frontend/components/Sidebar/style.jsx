@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const SidebarStyle = styled.div`
     width: 20vw;
-    height: 110%;
+    height: 100%;
     background-color: #8DE28B;
     /* border: 1px solid black; */
 `
