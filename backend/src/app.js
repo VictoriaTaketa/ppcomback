@@ -1,13 +1,23 @@
-// Módulo de configuração da webapi, módulo de aplicação
-
-// Importar o pacote express (servidor)
+// importar configurações para as rotas
 const express = require('express');
-// Importar o pacote dotenv, gerenciador de variáveis de ambiente
-const dotenv = require('dotenv').config();
+const cors    = require('cors');
+const app     = express();
+require('dotenv').config();
 
-// Instanciar o express na variável app
-const app = express();
-// Setar a porta do servidor, a parir do arquivo .env ou assumir 3005
-app.set('port', process.env.PORT || 3000);
+// importar arquivos de rotas
+const usersRouter  = require('./routes/usersRouter');
+const loginRouter = require('./routes/loginRouter');
+const postsRouter = require('./routes/postsRouter');
+const comentariosRouter = require('./routes/comentariosRouter');
+
+app.set('port', process.env.PORT);
+app.use(cors());
+app.use(express.json());
+
+// habilitar as rotas na aplicação
+app.use('/api', usersRouter);
+app.use('/api', loginRouter);
+app.use('/api', postsRouter);
+app.use('/api', comentariosRouter);
 
 module.exports = app;

@@ -15,6 +15,7 @@ export const ConteudoBio = styled.p`
     display: flex;
     flex-direction: column;
     display: block;
+    margin-left: 20px;
 `
 
 //----------------DIVS-----------------

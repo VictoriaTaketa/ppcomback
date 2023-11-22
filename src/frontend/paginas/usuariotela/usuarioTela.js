@@ -20,7 +20,7 @@ function usuarioTela() {
                         biografia
                     </TitBio>
                     <ConteudoBio>
-                        Phasellus sagittiies at. Suspendisse at aliquet odio. Nullam maximus a elit vitae scelerisque. In varius mi eu velit euismod, a scelerisque neque laoreet. Nullam hendrerit cursus risus sit amet fringilla. Cras dapibus quam a odio tempor efficitur. In porta, orci et sodales mollis, nunc enim posuere diam, consectetur fermentum dui lacus non massa. Pellentesque tempor euismod arcu sit amet porta. Duis faucibus est non ante ullamcorper, iaculis condimentum metus ullamcorper.
+                        Isso aqui é uma biografia.
                     </ConteudoBio>
                 </Biografia>
                 <Barrinha/>
