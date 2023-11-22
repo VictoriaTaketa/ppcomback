@@ -1,5 +1,3 @@
-// Arquivo responsável pela configuração e conexão com o banco de dados
- 
 // Importar o pacote do mysql
 const mysql = require('mysql2');
 

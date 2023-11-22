@@ -22,7 +22,10 @@ function Cadastro() {
                     <EmailUsuario>Email</EmailUsuario>
                     <InputEmail />
                     <SenhaUsuario>Senha</SenhaUsuario>
-                    <InputSenha/>
+                    <InputSenha
+                        maxLength={8}
+                        minLength={4}
+                    />
                     <TextoAviso>
                         requisitos: mínimo 8 caracteres, inclua números para sua segurança :)
                     </TextoAviso>
