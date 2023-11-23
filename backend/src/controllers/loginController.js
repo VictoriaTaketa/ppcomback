@@ -5,26 +5,26 @@ require("dotenv").config();
 // Pacote para criptografar a senha de usuario
 const bcrypt = require('bcrypt');
 // Importar pacote que implementa o protocolo JSON Web Token
-const jwt = require('jsonwebtoken');
+const jwt = require('jsonwebtoken')
 
 // Authentication
 async function login(request, response) {
     // Preparar o comando de execução no banco
-    const query = "SELECT * FROM usuarios WHERE `email` = ?;";
+    const query = "SELECT * FROM users WHERE `name` = ?;";
     
     // Recuperar credenciais informadas
     const params = Array(
-        request.body.email
+        request.body.name
     );
 
     // Executa a ação no banco e valida os retornos para o client que realizou a solicitação
     connection.query(query, params, (err, results) => {
         try {            
             if (results.length > 0) {                
-                bcrypt.compare(request.body.senha, results[0].senha, (err, result) => {
+                bcrypt.compare(request.body.senha, results[0].password, (err, result) => {
                     if (err) {                        
                         return response.status(401).send({
-                            msg: 'Email or password is incorrect!'
+                            msg: 'Name or password is incorrect!'
                         });
                     } else if(result) {
                         const id = results[0].id; //INSTALAR JWT --> BIBLIOTECA DE VALIDAÇÃO

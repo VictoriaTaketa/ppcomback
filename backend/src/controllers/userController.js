@@ -7,7 +7,7 @@ const bcrypt = require('bcrypt');
 // Função que retorna todos usuários no banco de dados
 async function listUsers(request, response) {
     // Preparar o comando de execução no banco
-    connection.query('SELECT * FROM usuarios', (err, results) => { 
+    connection.query('SELECT * FROM users', (err, results) => { 
         try {  // Tenta retornar as solicitações requisitadas
             if (results) {  // Se tiver conteúdo 
                 response.status(200).json({
@@ -39,7 +39,7 @@ async function listUsers(request, response) {
 // Função que cria um novo usuário 
 async function storeUser(request, response) {
     // Preparar o comando de execução no banco
-    const query = 'INSERT INTO usuarios(nome, email, senha) VALUES(?, ?, ?);';
+    const query = 'INSERT INTO users(name, email, password) VALUES(?, ?, ?);';
 
     // Recuperar os dados enviados na requisição
     const params = Array(
@@ -83,7 +83,7 @@ async function storeUser(request, response) {
 // Função que atualiza o usuário no banco
 async function updateUser(request, response) {
     // Preparar o comando de execução no banco
-    const query = "UPDATE usuarios SET `nome` = ?, `senha` = ? WHERE `id` = ?";
+    const query = "UPDATE users SET `name` = ?, `password` = ? WHERE `id` = ?";
 
     // Recuperar os dados enviados na requisição respectivamente
     const params = Array(
@@ -127,7 +127,7 @@ async function updateUser(request, response) {
 // Função que remove usuário no banco
 async function deleteUser(request, response) {
     // Preparar o comando de execução no banco
-    const query = "DELETE FROM usuarios WHERE `id` = ?";
+    const query = "DELETE FROM users WHERE `id` = ?";
 
     // Recebimento de parametro da rota
     const params = Array(

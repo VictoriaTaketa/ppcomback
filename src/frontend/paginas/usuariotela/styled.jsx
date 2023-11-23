@@ -44,6 +44,11 @@ export const Biografia = styled.div`
     border-radius: 5px;
 `
 
+export const Post = styled.div`
+    background-color: yellow;
+    display: block;
+`
+
 //------------IMAGENS---------------
 
 export const ImagemFundo = styled.img`
